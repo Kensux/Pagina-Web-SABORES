@@ -1,12 +1,12 @@
 <?php  
 // Datos de conexión a la base de datos  
 $servidor = "localhost";  
-$email = "email";  
-$password = "password";   
-$base_datos = "usuarios";  
+$username = "root";  
+$password = "";   
+$base_datos = "sabores";  
 
 // Crear conexión  
-$connection = mysqli_connect($servidor, $email, $contraseña, $base_datos);  
+$connection = mysqli_connect($servidor, $username, $password, $base_datos);  
 
 // Comprobar conexión  
 if (!$connection) {  
