@@ -1,0 +1,188 @@
+body{ background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(../Contenido/Logo.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1{
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    color:#FFFFFF;
+    letter-spacing: 3px;
+}
+
+h2{
+    color:#FFFFFF;
+}
+
+h3{
+    color:#FFFFFF;
+}
+
+.parrafo-1{
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 5px;
+    color:#FFFFFF;
+    margin: 40px 0;
+}
+
+.Login{
+    margin-bottom: 200px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #bc8741;
+    padding: 10px 10px;
+    border-radius: 14px;
+}
+
+.imagenes_principales{
+    height: 200px;
+    width: 200px;
+    margin: 20px 30px;
+}
+
+.big_box{
+    border-bottom: 4px solid #bc8741;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.a_restaurantes{
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #bc8741;
+    text-decoration: none;
+    padding: 5px 40px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+}
+
+#barra_busqueda{
+    font-size: 20px;
+    margin: 0 34%;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding: 5px 100px;
+    padding-left: 5px;
+    border-radius: 20px;
+
+}
+
+#h2_InisioDeSesion{
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input_inisio{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+    font-family: Montserrat;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.formulario_inicio{
+    margin: 30px 34%;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+
+    
+}
+
+.parrafo-2{
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+#Caja_sesion{
+    border-bottom: #bc8741 solid 4px;
+}
+
+#a_registro{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 20px;
+    background-color: #bc8741;
+    margin: 0 550px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.formulario_registro{
+justify-content: center;
+align-items: center;
+margin:0 350px;
+padding: 50px;
+
+
+}
+
+.inpunt_registro{
+    padding: 10px;
+    margin: 8px;
+    width: 400px ;
+    font-family: Montserrat;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#a_volverInicio{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #bc8741;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Montserrat;
+    font-size: 18px;
+    margin:0 500px;
+}
+
+.menu{
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.input_restaurante{
+    padding: 10px;
+    margin: 5px;
+    width: 300px;
+    font-family: Montserrat;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+footer{
+    font-family: Montserrat;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 5px;
+    color:#FFFFFF;
+    margin: 40px 0;
+}
+
+.menu_img{
+    height: 200px;
+    width: 250px;
+    margin: 20px 10px;
+}
