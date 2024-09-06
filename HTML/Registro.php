@@ -1,13 +1,12 @@
 <?php  
 // Datos de conexión  
-$servidor = "localhost";   
-$nombre = "nombre";  
-$password = "contraseña";   
-$base_datos = "usuarios";  
+$servidor = "localhost";  
+$username = "root";  
+$password = "";   
+$base_datos = "sabores";  
 
 // Crear conexión  
-$conn = mysqli_connect($servidor, $nombre, $password, $base_datos);  
-
+$conn = mysqli_connect($servidor, $username, $password, $base_datos);  
 // Comprobar conexión  
 if (!$conn) {  
     die("Conexión fallida: " . mysqli_connect_error());  
@@ -21,8 +20,8 @@ $password = isset($_POST['password']) ? trim($_POST['password']) : '';
 
 if (!empty($nombre) && !empty($apellido) && !empty($email) && !empty($password)) {  
     // Validar si el correo ya existe en la base de datos  
-    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE correo = ?");  
-    $stmt->bind_param("s", $correo);  
+    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE email = ?");  
+    $stmt->bind_param("s", $email);  
     $stmt->execute();  
     $result = $stmt->get_result();  
 
@@ -31,10 +30,10 @@ echo "El correo ya está en uso. <a href='Registro.html'>Intenta nuevamente</a>"
     } 
     else {  
         // Hashear la contraseña antes de guardarla  
-        $password_hashed = password_hash($cpassword, PASSWORD_DEFAULT);  
+        $password_hashed = password_hash($password, PASSWORD_DEFAULT);  
     
         // Insertar nuevo usuario  
-        $stmt = $conn->prepare("INSERT INTO usuario (nombre, apellido, email, password) VALUES (?, ?, ?, ?)");  
+        $stmt = $conn->prepare("INSERT INTO usuarios (nombre, apellido, email, password) VALUES (?, ?, ?, ?)");  
         $stmt->bind_param("ssss", $nombre, $apellido, $email, $password_hashed);  
 
         if ($stmt->execute()) {   
